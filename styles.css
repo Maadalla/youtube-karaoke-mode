@@ -1,0 +1,243 @@
+        body {
+            width: 320px;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            user-select: none;
+        }
+
+
+        .top-bar {
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e1e1e;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .logo svg {
+            width: 18px;
+            fill: #ff0000;
+        }
+
+
+        .power-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid #444;
+        }
+
+        .power-btn svg {
+            width: 16px;
+            fill: #666;
+            transition: fill 0.2s;
+        }
+
+        .power-btn.active {
+            background: rgba(255, 0, 0, 0.15);
+            border-color: #ff0000;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+        }
+
+        .power-btn.active svg {
+            fill: #ff0000;
+        }
+
+
+        .status-bar {
+            padding: 12px 20px;
+            font-size: 11px;
+            color: #888;
+            text-align: center;
+            background: #121212;
+            border-bottom: 1px solid #222;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+
+        .controls {
+            padding: 20px;
+        }
+
+        .control-group {
+            margin-bottom: 24px;
+        }
+
+        .label-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #777;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .val-display {
+            color: #fff;
+            margin-left: 5px;
+            font-family: monospace;
+            font-size: 11px;
+        }
+
+
+        .reset-icon {
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            fill: #555;
+            opacity: 0.6;
+            transition: all 0.2s;
+        }
+
+        .reset-icon:hover {
+            fill: #fff;
+            opacity: 1;
+        }
+
+
+        .style-toggle {
+            display: flex;
+            background: #222;
+            border-radius: 6px;
+            padding: 3px;
+        }
+
+        .style-option {
+            flex: 1;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 11px;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .style-option:hover {
+            color: #999;
+        }
+
+        .style-option.active {
+            background: #3a3a3a;
+            color: #fff;
+        }
+
+
+        .swatch-container {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .swatch {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #333;
+            transition: transform 0.2s, border-color 0.2s;
+            box-sizing: border-box;
+        }
+
+        .swatch:hover {
+            transform: scale(1.15);
+            border-color: #555;
+        }
+
+        .swatch.selected {
+            border-color: #fff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+
+        input[type=range] {
+            width: 100%;
+            -webkit-appearance: none;
+            background: transparent;
+        }
+
+        input[type=range]::-webkit-slider-track {
+            width: 100%;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            margin-top: -5px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type=range]:hover::-webkit-slider-thumb {
+            background: #ff0000;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #555;
+            padding-bottom: 15px;
+            margin-top: 10px;
+            border-top: 1px solid #222;
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.2s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        .footer svg {
+            width: 14px;
+            fill: currentColor;
+        }

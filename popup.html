@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="logo">
+            <span>KARAOKE MODE</span>
+        </div>
+        <div class="power-btn" id="powerBtn" title="Toggle Extension">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="status-bar" id="songTitle">Play music to start</div>
+
+    <div class="controls">
+
+        <div class="control-group">
+            <div class="label-row"><span>Display Style</span></div>
+            <div class="style-toggle">
+                <div class="style-option" id="modeClassic" data-mode="classic">Classic</div>
+                <div class="style-option" id="modeBoxed" data-mode="boxed">Karaoke</div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <span>Sync Delay <span id="offsetVal" class="val-display">0.0s</span></span>
+                <svg class="reset-icon" id="resetOffset" viewBox="0 0 24 24">
+                    <path
+                        d="M12 5V2L8 6l4 4V7c3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93 0-4.42-3.58-8-8-8zm-6 8c0-1.65.67-3.15 1.76-4.24l-1.41-1.41C4.59 9.13 3.5 11.47 3.5 14c0 4.42 3.58 8 8 8v-3l-4-4 4-4v3c-2.76 0-5 2.24-5 5z" />
+                </svg>
+            </div>
+            <input type="range" id="offsetSlider" min="-10" max="10" step="0.1" value="0">
+        </div>
+
+        <div class="control-group">
+            <div class="label-row">
+                <span>Font Size <span id="sizeVal" class="val-display">32px</span></span>
+                <svg class="reset-icon" id="resetSize" viewBox="0 0 24 24">
+                    <path
+                        d="M12 5V2L8 6l4 4V7c3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93 0-4.42-3.58-8-8-8zm-6 8c0-1.65.67-3.15 1.76-4.24l-1.41-1.41C4.59 9.13 3.5 11.47 3.5 14c0 4.42 3.58 8 8 8v-3l-4-4 4-4v3c-2.76 0-5 2.24-5 5z" />
+                </svg>
+            </div>
+            <input type="range" id="sizeSlider" min="14" max="50" step="1" value="32">
+        </div>
+
+        <div class="control-group">
+            <div class="label-row"><span>Text Color</span></div>
+            <div class="swatch-container">
+                <div class="swatch" data-color="#FFFFFF" style="background: #FFFFFF;" title="Classic White"></div>
+                <div class="swatch" data-color="#FFD700" style="background: #FFD700;" title="Cinema Yellow"></div>
+                <div class="swatch" data-color="#00FFFF" style="background: #00FFFF;" title="Cyan"></div>
+                <div class="swatch" data-color="#39FF14" style="background: #39FF14;" title="Neon Green"></div>
+                <div class="swatch" data-color="#FF69B4" style="background: #FF69B4;" title="Hot Pink"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a id="githubLink" target="_blank">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            GitHub
+        </a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
