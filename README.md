@@ -11,7 +11,7 @@
 
 **Onboarding Experience**
 <p align="center">
-  <img src="screenshots/welcome_page.png" alt="Welcome page" width="100%">
+  <img src="screenshots/welcome_page.png" alt="Welcome page" width="70%">
 </p>
 
 ## ✨ Features
@@ -40,7 +40,7 @@
 
 **Control Center**
 <p align="center">
-  <img src="screenshots/popup_ui.PNG" alt="Popup page" width="80%">
+  <img src="screenshots/popup_ui.PNG" alt="Popup page" width="60%">
 </p>
 
 ## 🛠️ Installation
