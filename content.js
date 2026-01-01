@@ -186,23 +186,7 @@
         const videoDuration = getVideoDuration();
         let searchQuery = "";
 
-        // --- STRATEGY 1: Media Session API ---
-        if (navigator.mediaSession && navigator.mediaSession.metadata) {
-            const rawArtist = navigator.mediaSession.metadata.artist || "";
-            const rawTrack = navigator.mediaSession.metadata.title || "";
 
-            const metaArtist = cleanArtistName(rawArtist);
-            const metaTrack = cleanTrackTitle(rawTrack);
-
-            if (metaTrack) {
-                if (metaTrack.toLowerCase().includes(metaArtist.toLowerCase())) {
-                    searchQuery = metaTrack;
-                } else {
-                    searchQuery = `${metaArtist} ${metaTrack}`;
-                }
-                console.log(`🎵 Source: MediaSession -> "${searchQuery}"`);
-            }
-        }
 
         // --- STRATEGY 2: DOM Scraping ---
         if (!searchQuery) {
