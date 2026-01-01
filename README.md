@@ -40,7 +40,7 @@
 
 **Control Center**
 <p align="center">
-  <img src="screenshots/popup_ui.png" alt="Popup page" width="80%">
+  <img src="screenshots/popup_ui.PNG" alt="Popup page" width="80%">
 </p>
 
 ## 🛠️ Installation
