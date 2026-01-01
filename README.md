@@ -35,7 +35,7 @@
 
 | **Karaoke Mode** | **Classic Mode** |
 |:---:|:---:|
-| <img src="screenshots/karaoke_mode.jpg" width="300"> | <img src="screenshots/classic_mode.jpg" width="400"> |
+| <img src="screenshots/karaoke_mode.jpg" width="400"> | <img src="screenshots/classic_mode.jpg" width="400"> |
 | *Dark mode popup with sync sliders and color swatches* | *Minimalist floating lyrics* |
 
 **Control Center**
