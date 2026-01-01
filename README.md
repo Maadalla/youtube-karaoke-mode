@@ -9,9 +9,9 @@
 
 ## 📸 Overview
 
-**Karaoke Mode (Netflix Style)**
+**Onboarding Experience**
 <p align="center">
-  <img src="screenshots/karaoke_mode.jpg" alt="Karaoke Mode" width="100%">
+  <img src="screenshots/welcome_page.png" alt="Welcome page" width="100%">
 </p>
 
 ## ✨ Features
@@ -33,21 +33,21 @@
 
 ## 🎨 Gallery
 
-| **Control Center** | **Classic Mode** |
+| **Karaoke Mode** | **Classic Mode** |
 |:---:|:---:|
-| <img src="screenshots/popup_ui.png" width="300"> | <img src="screenshots/classic_mode.jpg" width="400"> |
+| <img src="screenshots/karaoke_mode.jpg" width="300"> | <img src="screenshots/classic_mode.jpg" width="400"> |
 | *Dark mode popup with sync sliders and color swatches* | *Minimalist floating lyrics* |
 
-**Onboarding Experience**
+**Control Center**
 <p align="center">
-  <img src="screenshots/welcome_page.jpg" alt="Welcome Page" width="80%">
+  <img src="screenshots/popup_ui.png" alt="Popup page" width="80%">
 </p>
 
 ## 🛠️ Installation
 
 1.  Clone this repository:
     ```bash
-    git clone [https://github.com/Maadalla/youtube-karaoke-mode.git](https://github.com/Maadalla/youtube-karaoke-mode.git)
+    git clone [https://github.com/Maadalla/youtube-karaoke-mode.git]
     ```
 2.  Open Chrome and navigate to `chrome://extensions`.
 3.  Toggle **Developer mode** (top right switch).
