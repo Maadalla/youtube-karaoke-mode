@@ -80,10 +80,7 @@ Since YouTube doesn't reload the page when you click a new video, the extension 
 - [ ] Spotify Web Player Integration
 - [ ] Multi-language translation support
 
-## 👨‍💻 Author
 
-**Maadalla**
-- [GitHub Profile](https://github.com/Maadalla)
 
 ---
 *Disclaimer: This extension is for educational purposes. Lyrics are provided by the Lrclib.net API.*
