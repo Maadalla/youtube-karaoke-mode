@@ -1,10 +1,9 @@
 {
     "manifest_version": 3,
     "name": "YouTube Karaoke Mode - Synced Lyrics",
-    "version": "4.2",
-    "description": "Transform YouTube into a Karaoke machine. Features synchronized lyrics, Netflix-style overlay, drag-and-drop UI, and instrumental detection.",
+    "version": "4.3",
+    "description": "Transform YouTube into a Karaoke machine. Features synchronized lyrics, drag-and-drop UI, and instrumental detection.",
     "permissions": [
-        "scripting",
         "storage"
     ],
     "host_permissions": [
